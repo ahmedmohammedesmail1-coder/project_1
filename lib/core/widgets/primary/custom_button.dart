@@ -18,28 +18,23 @@ class CustomButton extends StatelessWidget {
       child: SizedBox(
         height: 35,
         width: MediaQuery.of( context).size.width /2,
-        child: Material(
-          color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
           borderRadius: BorderRadius.circular(16),
-          child: InkWell(
-            onTap: onTap,
-            borderRadius: BorderRadius.circular(16),
-            
-            child: Container(
-              height: 35,
-              width: MediaQuery.of(context).size.width / 2,
-              decoration: BoxDecoration(
-                color: color,
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Center(
-                child: Text(
-                  text,
-                  style: TextStyle(
-                    color: ColorsManager.primaryColor,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+          child: Container(
+            height: 35,
+            width: MediaQuery.of(context).size.width / 2,
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Center(
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: ColorsManager.primaryColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),

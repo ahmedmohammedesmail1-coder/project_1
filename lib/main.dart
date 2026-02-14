@@ -3,6 +3,7 @@ import 'package:project_1/core/theme/theme.dart';
 import 'package:project_1/core/util/constans/routes.dart';
 
 void main() {
+WidgetsFlutterBinding.ensureInitialized();
   runApp(const Goldy());
 }
 

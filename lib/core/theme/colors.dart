@@ -10,4 +10,5 @@ class ColorsManager {
   static const Color colorWhite = Colors.white;
   static const Color iconsColor = Colors.white;
   static const Color textColor = Colors.black;
+  static const Color greyColor =Colors.grey;
 }
