@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_1/features/silver/data/models/silver_model.dart';
 import 'package:project_1/features/silver/data/repo/sillver_repo.dart';
-import 'package:project_1/features/silver/presentation/logic/gold_states.dart';
+import 'package:project_1/features/silver/presentation/logic/silver_states.dart';
 
 class SilverCubit extends Cubit<SilverStates> {
   final SilverRepo silverRepo;

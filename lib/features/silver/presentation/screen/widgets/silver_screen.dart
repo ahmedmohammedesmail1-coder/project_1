@@ -7,8 +7,8 @@ import 'package:project_1/core/util/constans/spacing.dart';
 import 'package:project_1/core/widgets/primary/customText.dart';
 import 'package:project_1/features/silver/data/models/silver_model.dart';
 import 'package:project_1/features/silver/data/repo/sillver_repo.dart';
-import 'package:project_1/features/silver/presentation/logic/gold_cubit.dart';
-import 'package:project_1/features/silver/presentation/logic/gold_states.dart';
+import 'package:project_1/features/silver/presentation/logic/silver_cubit.dart';
+import 'package:project_1/features/silver/presentation/logic/silver_states.dart';
 
 // ignore: must_be_immutable
 class SilverScreen extends StatefulWidget {
