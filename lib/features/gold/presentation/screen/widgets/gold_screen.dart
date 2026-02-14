@@ -68,7 +68,7 @@ class _GoldScreenState extends State<GoldScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CustomText(
-                      text: model?.price.toString()??'00',
+                      text: model?.price.toStringAsFixed(3) ?? '00.000',
                       style: TextStyleManager.bold20.copyWith(
                         color: ColorsManager.goldColor,
                       ),

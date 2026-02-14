@@ -13,11 +13,11 @@ class SilverModel {
   });
   factory SilverModel.fromJson(Map<String, dynamic> json) {
     return SilverModel(
-      price: (json['price'] as num).toDouble(),
       name: json['name'],
+      price: (json['price'] as num).toDouble(),
       symbol: json['symbol'],
-      updatedAt: DateTime.parse(json['updated_at']),
-      updatedAtReadable: json['updated_at_readable'],
+      updatedAt: DateTime.parse(json['updatedAt']),
+      updatedAtReadable: json['updatedAtReadable'],
     );
   }
 }

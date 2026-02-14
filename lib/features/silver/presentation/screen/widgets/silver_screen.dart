@@ -58,14 +58,14 @@ class _SilverScreenState extends State<SilverScreen> {
             } else if (state is SilverSuccessState) {
               model = state.silverModel;
               return Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(AssetsHelper.silverImage, scale: 1.5),
+                  Image.asset(AssetsHelper.silverImage, scale: 1.5,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CustomText(
-                        text: model?.price.toString()??'00',
+                        text: model?.price.toStringAsFixed(3) ?? '00.000',
                         style: TextStyleManager.bold20.copyWith(
                           color: ColorsManager.silverColor,
                         ),
