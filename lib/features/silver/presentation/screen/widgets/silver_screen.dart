@@ -4,6 +4,7 @@ import 'package:project_1/core/theme/colors.dart';
 import 'package:project_1/core/theme/text_style.dart';
 import 'package:project_1/core/util/constans/assets_helper.dart';
 import 'package:project_1/core/util/constans/spacing.dart';
+import 'package:project_1/core/util/constans/strings_app.dart';
 import 'package:project_1/core/widgets/primary/customText.dart';
 import 'package:project_1/features/silver/data/models/silver_model.dart';
 import 'package:project_1/features/silver/data/repo/sillver_repo.dart';
@@ -35,7 +36,7 @@ class _SilverScreenState extends State<SilverScreen> {
           backgroundColor: ColorsManager.primaryColor,
 
           title: CustomText(
-            text: 'Silver',
+            text: StringsApp.silver,
             style: TextStyleManager.bold20.copyWith(
               color: ColorsManager.silverColor,
             ),

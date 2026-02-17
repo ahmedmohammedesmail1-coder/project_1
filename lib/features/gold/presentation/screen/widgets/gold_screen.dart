@@ -4,6 +4,7 @@ import 'package:project_1/core/theme/colors.dart';
 import 'package:project_1/core/theme/text_style.dart';
 import 'package:project_1/core/util/constans/assets_helper.dart';
 import 'package:project_1/core/util/constans/spacing.dart';
+import 'package:project_1/core/util/constans/strings_app.dart';
 import 'package:project_1/core/widgets/primary/customText.dart';
 import 'package:project_1/features/gold/data/models/gold_model.dart';
 import 'package:project_1/features/gold/data/repo/gold_repo.dart';
@@ -36,7 +37,7 @@ class _GoldScreenState extends State<GoldScreen> {
           backgroundColor: ColorsManager.primaryColor,
 
           title: CustomText(
-            text: 'Gold',
+            text: StringsApp.gold,
             style: TextStyleManager.bold20.copyWith(
               color: ColorsManager.goldColor,
             ),
